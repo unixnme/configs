@@ -48,3 +48,5 @@ imap <F1> <C-o>:echo<CR>
 color desert
 
 set backspace=2
+set linebreak
+set wrap
