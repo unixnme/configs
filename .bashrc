@@ -132,7 +132,6 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\u' adds the name of the current user to the prompt
 # '\$(__git_ps1)' adds git-related stuff
 # '\W' adds the name of the current directory
-echo $PS1
 export PS1="$yellow\H $green\u$purple\$(__git_ps1)$blue \W $ $reset"
 
 bind '"\e[A": history-search-backward'
