@@ -43,6 +43,11 @@ set wildmode=longest,list,full
 set wildmenu
 nnoremap <F2> :tabp<CR>
 nnoremap <F3> :tabn<CR>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
 color desert
