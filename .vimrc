@@ -11,6 +11,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Yggdroot/indentLine'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -65,5 +66,5 @@ nnoremap <C-H> <C-W><C-H>
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 let g:ycm_python_binary_path = 'python'
 
-set tags=~/tags
 nnoremap <C-P> :YcmCompleter GoTo<CR>
+set cursorline
