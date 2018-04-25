@@ -1,4 +1,25 @@
-execute pathogen#infect()
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+" ...
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
 syntax on
 filetype plugin indent on
 set nu
@@ -22,6 +43,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap ;2 :tabp<CR>
 nnoremap ;3 :tabn<CR>
+nnoremap J <nop>
 
 nmap <F1> :echo<CR>
 imap <F1> <C-o>:echo<CR>
@@ -30,3 +52,18 @@ color desert
 set backspace=2
 set linebreak
 set wrap
+
+set statusline=%F%m%r%<\ %=%l,%v\ [%L]\ %p%%
+set laststatus=2
+
+"split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
+let g:ycm_python_binary_path = 'python'
+
+set tags=~/tags
+nnoremap <C-P> :YcmCompleter GoTo<CR>
