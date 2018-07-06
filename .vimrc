@@ -65,6 +65,7 @@ nnoremap <C-H> <C-W><C-H>
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py'
 let g:ycm_python_binary_path = 'python'
+let g:ycm_goto_buffer_command = 'new-tab'
 
 nnoremap <C-P> :YcmCompleter GoTo<CR>
 set cursorline
