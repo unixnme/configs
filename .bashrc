@@ -136,3 +136,11 @@ export PS1="$yellow\H $green\u$purple\$(__git_ps1)$blue \W $ $reset"
 
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
+
+export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}:~/Downloads/htk/bin
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+#. /home/linuxnme/miniconda3/etc/profile.d/conda.sh
+export OMP_NUM_THREADS=1
+export NUMEXPR_NUM_THREADS=1
+export MKL_NUM_THREADS=1
