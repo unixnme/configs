@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Yggdroot/indentLine'
+Plugin 'alvan/vim-closetag'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -20,6 +21,11 @@ Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
+call plug#begin('~/.vim/plugged')
+Plug  'https://github.com/keith/swift.vim.git'
+
+call plug#end()
 
 syntax on
 filetype plugin indent on
