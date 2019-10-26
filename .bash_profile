@@ -150,5 +150,3 @@ export PKG_CONFIG_PATH="/usr/local/opt/opencv3/lib/pkgconfig"
 alias pdb=/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/pdb.py
 alias colordiff='colordiff -u'
 
-# added by Miniconda3 4.3.11 installer
-export PATH="/Users/ykang7/miniconda3/bin:$PATH"
