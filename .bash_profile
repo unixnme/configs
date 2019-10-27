@@ -150,3 +150,4 @@ export PKG_CONFIG_PATH="/usr/local/opt/opencv3/lib/pkgconfig"
 alias pdb=/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/pdb.py
 alias colordiff='colordiff -u'
 
+alias preview="open -a Preview"
